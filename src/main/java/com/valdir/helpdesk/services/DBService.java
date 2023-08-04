@@ -34,18 +34,18 @@ public class DBService {
 
 	public void instanciaDB() {
 		
-		Tecnico tec1 = new Tecnico(null, "Andre Oliveira", "63653230268", "andre@mail.com", encoder.encode("123"));
+		Tecnico tec1 = new Tecnico(null, "Andre Oliveira", "63653230268", "andre@mail.com", encoder.encode("#48b5"));
 		tec1.addPerfil(Perfil.ADMIN);
-		Tecnico tec2 = new Tecnico(null, "Richard Stallman", "903.347.070-56", "stallman@mail.com", encoder.encode("123"));
-		Tecnico tec3 = new Tecnico(null, "Claude Elwood Shannon", "271.068.470-54", "shannon@mail.com", encoder.encode("123"));
-		Tecnico tec4 = new Tecnico(null, "Tim Berners-Lee", "162.720.120-39", "lee@mail.com", encoder.encode("123"));
+		Tecnico tec2 = new Tecnico(null, "Richard Stallman", "903.347.070-56", "stallman@mail.com", encoder.encode("#48b5"));
+		Tecnico tec3 = new Tecnico(null, "Claude Elwood Shannon", "271.068.470-54", "shannon@mail.com", encoder.encode("#48b5"));
+		Tecnico tec4 = new Tecnico(null, "Tim Berners-Lee", "162.720.120-39", "lee@mail.com", encoder.encode("#48b5"));
 		Tecnico tec5 = new Tecnico(null, "Linus Torvalds", "778.556.170-27", "linus@mail.com", encoder.encode("123"));
 		
-		Cliente cli1 = new Cliente(null, "Albert Einstein", "111.661.890-74", "einstein@mail.com", encoder.encode("123"));
-		Cliente cli2 = new Cliente(null, "Ada Lovelace", "322.429.140-06", "lovelace@mail.com", encoder.encode("123"));
-		Cliente cli3 = new Cliente(null, "Charles Babbage", "792.043.830-62", "babbage@mail.com", encoder.encode("123"));
-		Cliente cli4 = new Cliente(null, "Stephen Wozniac", "177.409.680-30", "woz@mail.com", encoder.encode("123"));
-		Cliente cli5 = new Cliente(null, "Max Planck", "081.399.300-83", "planck@mail.com", encoder.encode("123"));
+		Cliente cli1 = new Cliente(null, "Albert Einstein", "111.661.890-74", "einstein@mail.com", encoder.encode("#48b5"));
+		Cliente cli2 = new Cliente(null, "Ada Lovelace", "322.429.140-06", "lovelace@mail.com", encoder.encode("#48b5"));
+		Cliente cli3 = new Cliente(null, "Charles Babbage", "792.043.830-62", "babbage@mail.com", encoder.encode("#48b5"));
+		Cliente cli4 = new Cliente(null, "Stephen Wozniac", "177.409.680-30", "woz@mail.com", encoder.encode("#48b5"));
+		Cliente cli5 = new Cliente(null, "Max Planck", "081.399.300-83", "planck@mail.com", encoder.encode("#48b5"));
 
 		Chamado c1 = new Chamado(null, Prioridade.MEDIA, Status.ANDAMENTO, "Chamado 1", "Teste chamado 1", tec1, cli1);
 		Chamado c2 = new Chamado(null, Prioridade.ALTA, Status.ABERTO, "Chamado 2", "Teste chamado 2", tec1, cli2);
